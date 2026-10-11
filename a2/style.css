@@ -5,7 +5,7 @@
     font-family:'Courier New', Courier, monospace;
 }
 
-#div1
+#div1, #div2, #div3, #div4
 {
     background-color: lavender;
     border: 2px solid rgb(112, 136, 144);
