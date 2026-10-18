@@ -66,6 +66,9 @@ img
     display: block;
     width: 50%;
     margin: auto;
+    object-fit: cover;
+    height: 250px;
+
 
 }
 
