@@ -1,8 +1,11 @@
 
-    
-    body{
-    background-color: white;
+body{
     font-family:'Courier New', Courier, monospace;
+    background-image:url('images/meriphoto.jpeg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
 }
 
 #mainpg, #Codp, #Profpg, #SDLCpg, #cophotz, #Codipt, #Codilinks
@@ -12,7 +15,7 @@
     border-radius: 10px 40px;
     width: 80%;
     display: block;
-    margin-top: 20px;;
+    margin-top: 20px;
    margin-inline: auto;
    font-size: x-large;
   
@@ -92,3 +95,17 @@ a:hover
     background-color: paleTurquoise;
   margin-top: 10px;
 }
+/*new additions 
+.content-grid
+    {
+    display:grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    width: 80%;
+    margin: 20px auto;
+    }
+.content-grid #SDLpg, #Profpg
+{
+
+}
+*/
