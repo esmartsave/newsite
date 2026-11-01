@@ -115,9 +115,7 @@ a:hover
 }
 .pts a
 {
-    flex: 2;
-    min-width:0;
-    min-heigh: 0;
+   position:relative;
 }
 .pts img
 {
@@ -125,7 +123,20 @@ a:hover
     height: 100%;
     object-fit: cover;
 }
+.capt
+{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 7px, 8px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    font-size: 14px;
+    text-align: center;
 
+
+}
 #footer
 {
     /*align-items:center;*/
