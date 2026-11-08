@@ -1,0 +1,133 @@
+
+<!--
+    Centria Edu - Basics of Web Development
+
+    Original author: Ville Heikkiniemi
+    Modified by: Malloy Nyakwama
+    Last modified: 2026-11-09
+
+    Based on the original course template.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ville Hekkiniemi">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <title>Centria Edu | Basics of Web Development</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    centria <span>edu</span>
+                </div>
+
+                <ul>
+                    <li><a href="index.html"><strong>Home</strong></a></li>
+                    <li><a href="#topics"><strong>Topics</strong></a></li>
+                    <li><a href="#"><strong>About</strong></a>
+                    <li><a href="gallery.html"><strong>Gallery</strong></a></li>
+                    <li><a href="contact.html"><strong>Contact us</strong></a></li>
+                 </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <span class="label">Basics of Web Development</span>
+                    <h1>
+                       Contact Form
+                    </h1>
+                    <p>
+                    You learn how to create a contact form, GET and POST user information.
+                    YOu also how the user information is sent securely online.
+                    </p>
+                    <h2>Key aspects of a form:</h2>
+                        <p>When creating a form, you <strong>MUST</strong>use the following elements:<br>
+                        The <strong><i>form</i></strong>, a <strong><i>label for </i></strong>, an <strong><i>input type</i></strong> and where necessary: the <strong><i>select </i></strong> with an <strong><i>option value </i></strong>, and the <strong><i>textarea </i></strong>and lastly <strong><i>submit button.</i></strong>
+                        </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="topics" id="topics">
+            <div class="container">
+                <h2>Fill in the form and contact us</h2>
+                <div class="form1">
+                    <article class="myform" id="form_background">
+                        <form action="https://httpbin.org/post" method="POST">
+                            <div class="f_container">
+                            
+                            <div class="fm_part">    
+                                <label for> First name:</label><br>
+                                <input type="text" id="fname" name="firstname" placeholder="Write your first name" required> <br>
+                            </div>
+                            <div class="fm_part">
+                                <label for> Last name:</label> <br>
+                                <input type="text" id="lname" name="lastname" placeholder="Write your last name" required><br>
+                            </div>
+                            <div class="fm_part">
+                                <label for> Email:</label><br>
+                                <input type="email" id="yemail" name="email" placeholder="myemail@gmail.com" required><br>
+                            </div>
+                            <div class="fm_part">
+                                <label for> Phone number: </label><br>
+                                <input type="tel" id="yphone" name="phone_no" pattern="[0-9]{3} [0-9]{3} [0-9]{4} [0-9]{4}" placeholder="000 344 3343 0009" required ><br>
+                            </div>
+                            <div class="fm_part">
+                                <label for> Street address: </label><br>
+                                <input type="text" id="street" name="street_address" placeholder="Street name"><br>
+                            </div>
+                            <div class="fm_part">
+                                <label for="code_number">Postal code:</label><br>
+                                <input type="text" id="code_number" name="Code" inputmode="numeric" pattern="[0-9]{5}" minlength="5" maxlength="5"><br>
+                            </div>
+                            <div class="fm_part">
+                            <label for> Select your city below: </label><br>
+                                <select id="city" name="y_city"> 
+                                    <option value="kokkola">Kokkola </option>
+                                    <option value="perho">Perho</option>
+                                    <option value="kaustinen">Kaustinen </option>
+                                    <option value="lestijarvi">Lestijärvi</option>
+                                    <option value="veteli">Veteli </option>
+                                    <option value="kannus">Kannus</option>   
+                                     <option value="toholampi">Toholampi </option>
+                                    <option value="halsua">Halsua</option>
+                                </select>
+                                </div>
+                                <br>
+
+                            <div class="fm_part">
+                                <label for="message"> Message </label><br>
+                                <textarea id="message" name="message" placeholder="Write your message here." style="height:100px"></textarea>
+                            </label>
+                            </div>
+                            <br>
+                            <input type="submit" value="Submit" class="submit"></input>
+                            <br>
+                            <p>Incase of emergency, contact customer service <a href ="tel:+358 405 000 0099">+358 405 000 0099</a><br>
+                                <strong>Monday to Friday 9.30 to 11.30 am.</strong></p>
+                        </div>
+
+                        </form>
+                      </article>
+                </div>  
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Centria Edu</p>
+        </div>
+    </footer>
+
+</body>
+</html>
