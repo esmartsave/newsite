@@ -32,7 +32,7 @@
                     <li><a href="#topics"><strong>Topics</strong></a></li>
                     <li><a href="#"><strong>About</strong></a>
                     <li><a href="gallery.html"><strong>Gallery</strong></a></li>
-                    <li><a href="contact.html"><strong>Contact us</strong></a></li>
+                    <li><a href="contact.html" aria-current="page"><strong>Contact us</strong></a></li>
                  </ul>
             </nav>
         </div>
@@ -67,62 +67,38 @@
                                 <h2>Fill in the form and contact us</h2>
                             
                             <div class="fm_part">    
-                                <label for> First name:</label><br>
+                                <label for="fname"> First name:</label><br>
                                 <input type="text" id="fname" name="firstname" placeholder="Write your first name" required> <br>
                             </div>
                             <div class="fm_part">
-                            <label for> Email:</label><br>
-                                <input type="email" id="yemail" name="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" placeholder="myemail@gmail.com" note="Enter evalid email address" required><br>
+                            <label for="ymail"> Email:</label><br>
+                                <input type="email" id="yemail" name="cu_email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" placeholder="myemail@gmail.com" note="Enter evalid email address" required><br>
                             </div>
                             <div class="fm_part">
-                                <label for> Phone number: </label>(Optional)<br>
-                                <input type="tel" id="yphone" name="phone_no" pattern="[0-9]{3} [0-9]{3} [0-9]{4} [0-9]{4}" placeholder="000 344 3343 0009" required ><br>
+                                <label for="yphone"> Phone number: </label>(Optional)<br>
+                                <input type="tel" id="yphone" name="cu_phone_no" pattern="[0-9]{3} [0-9]{3} [0-9]{4} [0-9]{4}" placeholder="000 344 3343 0009" required ><br>
                             </div> 
-                         
+                         <div class="fm-part">
+                            <label for="subject">Subject</label><br>
+                                <select id="subject" name="subject" required> 
+                                    <option value="">Choose a subject</option>
+                                    <option value="feedback">Feedback</option>
+                                    <option value="question">Question</option>
+                                    <option value="other">Other</option>
+                                </select>
+                         </div>
                             <div class="c_radio">
-                                <label>How do we contact you:</label><br>
-                                    <input type="radio" id="email" name="cu_contact" value="Email" required>
+                                <label for="contacting">How do we contact you:</label><br>
+                                    <input type="radio" id="email" autocomplete="email" name="cu_contact" value="Email" required>
                                 <label for="email">Email</label><br>
                                     <input type="radio" id="phone" name="cu_contact" value="Phone">
                                 <label for="phone">Phone</label><br>
                       </div>
-
-                            <!--<div class="fm_part">
-                            <div class="fm_part">
-                            <label for> Email:</label><br>
-                                <input type="email" id="yemail" name="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" placeholder="myemail@gmail.com" note="Enter evalid email address" required><br>
-                            </div>
-                            <div class="fm_part">
-                                <label for> Phone number: </label>(Optional)<br>
-                                <input type="tel" id="yphone" name="phone_no" pattern="[0-9]{3} [0-9]{3} [0-9]{4} [0-9]{4}" placeholder="000 344 3343 0009" required ><br>
-                            </div>
-                                <label for> Street address: </label><br>
-                                <input type="text" id="street" name="street_address" placeholder="Street name"><br>
-                            </div>
-                            <div class="fm_part">
-                                <label for="code_number">Postal code:</label><br>
-                                <input type="text" id="code_number" name="Code" inputmode="numeric" pattern="[0-9]{5}" minlength="5" maxlength="5"><br>
-                            </div>
-                            
-                            <div class="fm_part">
-                            <label for> Select your city: </label><br>
-                                <select id="city" name="y_city"> 
-                                    <Radio value="kokkola">Kokkola </Radio>
-                                    <option value="perho">Perho</option>
-                                    <option value="kaustinen">Kaustinen </option>
-                                    <option value="lestijarvi">Lestijärvi</option>
-                                    <option value="veteli">Veteli </option>
-                                    <option value="kannus">Kannus</option>   
-                                     <option value="toholampi">Toholampi </option>
-                                    <option value="halsua">Halsua</option>
-                                </select>
-                                </div>
-                                <br>
-                            -->
+      
 
                             <div class="fm_part">
                                 <label for="message"> Message </label><br>
-                                <textarea id="message" name="message" placeholder="Write your message here." style="height:100px" required></textarea>
+                                <textarea id="message" name="cu_message" placeholder="Write your message here." style="height:100px" required></textarea>
                                 </label>
                             </div>
                             <br>

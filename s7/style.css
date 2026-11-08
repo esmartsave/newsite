@@ -56,8 +56,13 @@ nav ul {
 nav a {
     color: var(--dark);
     text-decoration: none;
+    font-weight: normal;
 }
 
+nav a[aria-current="page"] 
+{
+  font-weight: bold;
+}
 nav a:hover {
     color: var(--primary);
 }
@@ -211,6 +216,18 @@ footer {
     border: 2px solid black;
     margin-top: 6px;
     margin-bottom: 16px;
+    font-size: 16px;
+}
+.subject
+{
+    width: 30%;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 2px solid black;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    font-size: 16px;
 }
 .msg_width
 {
