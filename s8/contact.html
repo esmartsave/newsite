@@ -1,0 +1,125 @@
+
+<!--
+    Centria Edu - Basics of Web Development
+
+    Original author: Ville Heikkiniemi
+    Modified by: Malloy Nyakwama
+    Last modified: 2026-11-08
+
+    Based on the original course template.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ville Hekkiniemi">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <title>Centria Edu | Basics of Web Development</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    centria <span>edu</span>
+                </div>
+
+                <ul>
+                    <li><a href="index.html"><strong>Home</strong></a></li>
+                    <li><a href="#topics"><strong>Topics</strong></a></li>
+                    <li><a href="#"><strong>About</strong></a>
+                    <li><a href="gallery.html"><strong>Gallery</strong></a></li>
+                    <li><a href="contact.html" aria-current="page"><strong>Contact us</strong></a></li>
+                 </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <span class="label">Basics of Web Development</span>
+                    <h1>
+                       Contact Form
+                    </h1>
+                    <p>
+                    You learn how to create a contact form, GET and POST user information.
+                    You also how the user information is sent securely online.
+                    </p>
+                    <h2>Key aspects of a form:</h2>
+                        <p>When creating a form, you <strong>MUST</strong>use the following elements:<br>
+                        The <strong><i>form</i></strong>, a <strong><i>label for </i></strong>, an <strong><i>input type</i></strong> and where necessary: the <strong><i>select </i></strong> with an <strong><i>option value </i></strong>, and the <strong><i>textarea </i></strong>and lastly <strong><i>submit button.</i></strong>
+                        </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="topics" id="contact">
+            <div class="container">
+                
+                <div class="form1">
+                    <article class="myform" id="form_background">
+                        <form action="https://httpbin.org/post" method="POST">
+                            <div class="f_container">
+                                <h2>Fill in the form and contact us</h2>
+                            
+                            <div class="fm_part">    
+                                <label for="fname"> First name:</label><br>
+                                <input type="text" id="fname" name="firstname" placeholder="Write your first name" required, minlength="2", maxlength="80"> <br>
+                            </div>
+                            <div class="fm_part">
+                            <label for="yemail"> Email:</label><br>
+                                <input type="email" id="yemail" name="cu_email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" placeholder="myemail@gmail.com" maxlength="120", title="Enter a valid email address" required><br>
+                            </div>
+                            <div class="fm_part">
+                                <label for="yphone"> Phone number: </label>(Optional)<br>
+                                <input type="tel" id="y_phone" name="cu_phone_no" pattern="\+?[0-9]{,-15}" placeholder="+358468853078" required><br>
+                                <small id="p_order=" class="p_hint"> Plus(+) accepted, 7 - 15 characters, no spaces" </small>
+                            </div> 
+                         <div class="fm_part">
+                            <label for="subject">Subject</label><br>
+                                <select class="subject" name="c_subject" required> 
+                                    <option value="">Choose a subject</option>
+                                    <option value="feedback">Feedback</option>
+                                    <option value="question">Question</option>
+                                    <option value="other">Other</option>
+                                </select>
+                         </div>
+                            <div class="c_radio">
+                                <strong>How do we contact you:</strong><br>
+                                    <input type="radio" id="email" autocomplete="email" name="cu_contact" value="Email" required>
+                                    <label for="email">Email</label><br>
+                                        <input type="radio" id="phone" name="cu_contact" value="Phone">
+                                    <label for="phone">Phone</label><br>
+                        </div>
+      
+                            <div class="fm_part">
+                                <label for="message"> Message </label><br>
+                                <textarea id="message" name="cu_message" placeholder="Write at least 20 characters in your message" style="height:100px" minlength="20" maxlength="1000" required></textarea>
+                                </label>
+                            </div>
+                            <br>
+                            <input type="submit" value="Submit" class="submit"></input>
+                            <br>
+                            <p>Incase of emergency, contact customer service <a href ="tel:+358 405 000 0099">+358 405 000 0099</a><br>
+                                <strong>Monday to Friday 9.30 to 11.30 am.</strong></p>
+                        </div>
+
+                        </form>
+                      </article>
+                </div>  
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Centria Edu</p>
+        </div>
+    </footer>
+
+</body>
+</html>
