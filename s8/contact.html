@@ -79,7 +79,8 @@
                                 <p id="phone-help"> Enter 7–15 digits, optionally starting with +.Do not use spaces or hyphens. Example: +358401234567.</p>
                                 <input type="tel" id="y_phone" name="cu_phone_no" autocomplete="tel"pattern="[+]?[0-9]{7,15}" aria-describedby="help" placeholder="++358401234567" required><br>
                                 <!--<small id="p_order=" class="p_hint"> Plus(+) accepted, 7 - 15 characters, no spaces, no hyphens" </small> -->
-                            </div> 
+                                <input type="tel" id="y_phone" name="cu_phone_no" pattern="\+?[0-9]{,-15}" placeholder="+358468853078" required><br>
+                                <small id="p_order=" class="p_hint"> Plus(+) accepted, 7 - 15 characters, no spaces" </small></div> 
                          <div class="fm_part">
                             <label for="subject">Subject</label><br>
                                 <select class="subject" name="c_subject" required> 
@@ -94,6 +95,9 @@
                                     <input type="radio" id="email" name="cu_contact" value="Email" required>
                                     <label for="email">Email</label><br>
                                         <input type="radio" id="phone" name="cu_contact" value="Phone" required>
+                                    <input type="radio" id="email" autocomplete="email" name="cu_contact" value="Email" required>
+                                    <label for="email">Email</label><br>
+                                        <input type="radio" id="phone" name="cu_contact" value="Phone">
                                     <label for="phone">Phone</label><br>
                         </div>
       
@@ -105,7 +109,11 @@
                             <br>
                             <input type="submit" value="Submit" class="submit"></input>
                             <br>
+<<<<<<< HEAD
                             <p>In case of emergency, contact customer service <a href ="tel:+358 405 000 0099">+358 405 000 0099</a><br>
+=======
+                            <p>Incase of emergency, contact customer service <a href ="tel:+358 405 000 0099">+358 405 000 0099</a><br>
+>>>>>>> 8c07ec8d0e2968428ebc2b3ee3fec306d84244d4
                                 <strong>Monday to Friday 9.30 to 11.30 am.</strong></p>
                         </div>
 
