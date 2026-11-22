@@ -173,6 +173,16 @@ input[type=email]
     margin: 5px 0 22px 0;
     font-size: 22px;
 }
+
+input:user-invalid
+    {
+        border-color: red;
+    }
+    
+input:user-valid
+{
+    border-color: green;
+}
 #reg_submit
 {
     background-color: aqua;
