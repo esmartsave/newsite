@@ -256,7 +256,7 @@ input[type=submit]:hover
 {
     background-color: burlywood;
 }
-.p_order
+.p_order, .phone-help
 {
     display: block; 
     margin-top: 4px; 
@@ -308,6 +308,17 @@ input[type=radio]
         text-align: left;
     }
 
+input:not([type="radio"]):user-invalid,
+select:user-invalid,
+textarea:user-invalid {
+  border: 2px dashed #b00020;
+}
+
+input:not([type="radio"]):user-valid,
+select:user-valid,
+textarea:user-valid {
+  border: 2px solid #24733c;
+}
 @media (max-width: 700px) 
 {
 nav ul 

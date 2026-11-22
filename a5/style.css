@@ -1,0 +1,148 @@
+
+body{
+    background-color: rgb(214, 227, 188);
+    font-family:'Courier New', Courier, monospace;
+    background-image:url('images/meriphoto.jpeg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+body{
+   margin: 0;
+   height: 100vh;
+   height: 100dvh; font-family:'Courier New', Courier, monospace;
+   display: flex;
+   flex-direction: column;
+}
+
+#mainpg, #Codp, #Profpg, #SDLCpg, #cophotz, #Codipt, #Codilinks
+{
+    background-color: lavender;
+    border: 2px solid rgb(112, 136, 144);
+    border-radius: 10px 40px;
+    width: 80%;
+    display: block;
+    margin-top: 20px;
+   margin-inline: auto;
+   font-size: x-large;
+  
+}
+.logo
+{
+    display: flex;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: OrangeRed;
+    gap: 15px;
+    flex-shrink:0;
+    border-radius: 50x;
+    border: 2px solid goldenrod ;
+    width: 190px;
+}
+
+#sbuttl
+{
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: OrangeRed;
+    justify-content: center;
+    
+}
+
+.menucont
+{
+    background-color: paleTurquoise;
+    font-weight: bold;
+    /*overflow: auto;*/
+    white-space: nowrap;
+    margin-top: 0px;
+    padding: 20px;
+    font-size: 25px;
+   
+}
+
+.mylist
+    {
+        overflow: hidden;
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        gap: 35px;
+        width: 100%;
+    }
+
+img
+{
+    display: block;
+    width: 50%;
+    margin: auto;
+   
+}
+
+.h1, h2
+{
+    color: blue;
+}
+
+ol
+{
+    padding-left: 10%;
+
+}
+a:hover
+
+{
+  background-color: yellow;  
+}
+
+
+.hor
+{
+    flex: 1;
+    padding: 10px;
+    min-heigh: 0;
+    display: flex;;
+    background-color: antiquewhite;
+    flex-direction: column;
+    
+}
+.pts
+{
+    display: flex;
+    gap: 10px;
+}
+.pts a
+{
+   position:relative;
+}
+.pts img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.capt
+{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 7px, 8px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    font-size: 14px;
+    text-align: center;
+
+
+}
+#footer
+{
+    /*align-items:center;*/
+    display: flex;
+    justify-content: center;
+    background-color: paleTurquoise;
+  margin-top: 10px;¨
+  font-size: 19px;
+}
