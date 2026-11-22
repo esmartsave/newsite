@@ -102,7 +102,7 @@ a:hover
 {
     flex: 1;
     padding: 10px;
-    min-heigh: 0;
+    min-height: 0;
     display: flex;;
     background-color: antiquewhite;
     flex-direction: column;
