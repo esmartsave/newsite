@@ -256,11 +256,9 @@ input[type=submit]:hover
 {
     background-color: burlywood;
 }
-<<<<<<< HEAD
 .p_order, .phone-help
-=======
+
 .p_order
->>>>>>> 8c07ec8d0e2968428ebc2b3ee3fec306d84244d4
 {
     display: block; 
     margin-top: 4px; 
@@ -291,10 +289,11 @@ input[type=text]:user-valid:not(:placeholder-shown),
 input[type=message]:user-valid:not(:placeholder-shown)
 
 
-
+/*
     {
         border: 4px solid green;
     }
+*/
 
 input[type=email]:user-invalid, 
 input[type=tel]:user-invalid, 
@@ -312,6 +311,7 @@ input[type=radio]
         text-align: left;
     }
 
+
 input:not([type="radio"]):user-invalid,
 select:user-invalid,
 textarea:user-invalid {
@@ -323,6 +323,7 @@ select:user-valid,
 textarea:user-valid {
   border: 2px solid #24733c;
 }
+
 @media (max-width: 700px) 
 {
 nav ul 
