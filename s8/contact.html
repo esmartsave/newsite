@@ -75,9 +75,9 @@
                                 <input type="email" id="yemail" name="cu_email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" placeholder="myemail@gmail.com" maxlength="120", title="Enter a valid email address" required><br>
                             </div>
                             <div class="fm_part">
-                                <label for="yphone"> Phone number: </label>(Optional)<br>
-                                <p id="phone-help"> Enter 7–15 digits, optionally starting with +.Do not use spaces or hyphens. Example: +358401234567.</p>
-                                <input type="tel" id="y_phone" name="cu_phone_no" autocomplete="tel"pattern="[+]?[0-9]{7,15}" aria-describedby="help" placeholder="++358401234567" required><br>
+                                <label for="y_phone"> Phone number: </label>(Optional)<br>
+                                <p> Enter 7–15 digits, optionally starting with +.Do not use spaces or hyphens. Example: +358401234567.</p>
+                                <input type="tel" id="y_phone" name="cu_phone_no" autocomplete="tel"pattern="[+]?[0-9]{7,15}" aria-describedby="help" placeholder="+358401234567" required><br>
                                 <!--<small id="p_order=" class="p_hint"> Plus(+) accepted, 7 - 15 characters, no spaces, no hyphens" </small> --> 
                          <div class="fm_part">
                             <label for="subject">Subject</label><br>
@@ -90,14 +90,12 @@
                          </div>
                             <div class="c_radio">
                                 <strong>How do we contact you:</strong><br>
-                                    <input type="radio" id="email" name="cu_contact" value="Email" required>
+                                        <input type="radio" id="email" name="cu_contact" value="Email" required>
                                     <label for="email">Email</label><br>
                                         <input type="radio" id="phone" name="cu_contact" value="Phone" required>
-                                    <!--<input type="radio" id="email" autocomplete="email" name="cu_contact" value="Email" required>
-                                    <label for="email">Email</label><br>
-                                        <input type="radio" id="phone" name="cu_contact" value="Phone"> 
                                     <label for="phone">Phone</label><br> 
-                            -->
+                                    <!--<input type="radio" id="email" autocomplete="email" name="cu_contact" value="Email" required>
+                                    <label for="email">Email</label><br>-->
                         </div>
       
                             <div class="fm_part">

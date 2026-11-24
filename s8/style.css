@@ -165,7 +165,7 @@ footer {
     background-color: var(--dark);
     color: var(--light);
 }
-#card-bkgrd
+/*#card-bkgrd
 {
     background-image: linear-gradient(180deg, rgba(11, 7, 22, 0.2) 0%,
     rgba(120, 111, 201, 0.6)),
@@ -176,7 +176,7 @@ footer {
     min-height: 300px;
     padding: 20px;
     background-size: cover;
-}
+} */
 .grayscale-image {
   display: block;
   max-width: 100%;
@@ -239,7 +239,7 @@ input[text-area]
     min-height: 90px;
     resize: vertical;
 }
-.submit
+#submit
 {
     background-color:rgb(221, 230, 233);
     color: blueviolet;
@@ -248,8 +248,7 @@ input[text-area]
     cursor: pointer;
     border-radius: 6px;
     border: 4px solid green;
-    width: 40%;
-    height: 130%;
+    width: 15%;
 }
 
 input[type=submit]:hover
